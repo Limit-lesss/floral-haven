@@ -1,38 +1,1140 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+/*! Home page */
+/*! Nav bar */
+.nav {
+  display: flex;
+  text-align: center;
+  background-image: linear-gradient(to right, rgb(23, 0, 29) 20%, rgba(18, 0, 29, 0.916) 100%);
+  color: rgba(255, 255, 255, 0.758);
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  font-size: 20px;
+  border-bottom: 1px solid rgb(137 76 76);
+  z-index: 100;
+  position: sticky;
+  top: 0vh;
+  width: 100%;
+}
+
+.icon {
+  margin-left: 40px;
+  position: relative;
+  padding: 10px 10px;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.icon img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 2px;
+  top: 8px;
+}
+
+.icon span {
+  color: rgb(243, 177, 188);
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.menu-section .menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 550px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-section .menu li {
+  cursor: pointer;
+  position: relative;
+  width: 100px;
+  padding: 8px 10px 15px 10px;
+  font-weight: 500;
+}
+
+.menu-section .menu .product,
+.menu-section .menu .page {
+  width: 180px;
+}
+
+.menu-section .menu .angel-down {
+  position: absolute;
+  top: 16px;
+  margin-left: 5px;
+}
+
+.menu-section .drop-down {
+  position: absolute;
+  top: 40px;
+  color: rgb(85, 82, 82);
+  border-radius: 5px;
+  opacity: 0;
+  width: 200px;
+  left: -25px;
+  visibility: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all .5s;
+}
+
+.menu-section .drop-down p:nth-last-child(1) {
+  border-radius: 0px 0px 5px 5px;
+}
+
+.menu-section .drop-down p {
+  border-bottom: 1px solid rgb(204, 197, 197);
+  padding: 10px 0px;
+  margin: 0px;
+  background-color: rgba(255, 255, 255, 0.977);
+}
+
+.menu-section .drop-down p:hover {
+  background-color: rgb(255, 187, 201);
+}
+
+.menu-section .menu .product:hover .drop-down {
+  visibility: visible;
+  top: 50px;
+  opacity: 1;
+  z-index: 10;
+}
+
+.menu-section .menu .page:hover .drop-down {
+  visibility: visible;
+  top: 50px;
+  opacity: 1;
+  z-index: 10;
+}
+
+.search-cart_etc-section {
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 40px;
+  align-items: center;
+  /* border: 2px solid; */
+}
+
+.search-cart_etc-section .search-icon,
+.profile-icon,
+.wishlist-icon,
+.cart-icon {
+  cursor: pointer;
+}
+
+.search-cart_etc-section .fa-heart span,
+.fa-cart-shopping span {
+  position: absolute;
+  top: -8px;
+  left: 14px;
+  border-radius: 50%;
+  border: none;
+  padding: 2px 5px;
+  font-size: 14px;
+  color: black;
+  background-color: red;
+  font-weight: 900;
+}
+
+.search-cart_etc-section .login-btn {
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 8px;
+  color: #71afdb;
+}
+
+/*! section one */
+.sectionOne {
+  height: 90vh;
+  width: 100%;
+  background-image: linear-gradient(to right, rgb(23, 0, 29) 20%, rgb(18 0 29 / 81%) 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.sectionOne #sectionOneFlower {
+  position: absolute;
+  left: 700px;
+  top: 30px;
+  width: 600px;
+  height: 680px;
+}
+
+.sectionOne>div {
+  width: 530px;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  font-size: 20px;
+}
+
+.sectionOne div p:nth-of-type(1) {
+  color: #afb3af;
+  margin: 20px 0px;
+  border-left: 4px solid #a9aba9;
+  padding-left: 5px;
+}
+
+.sectionOne div h2 {
+  margin: 10px 0px;
+  font-size: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #cc925bcf;
+}
+
+.sectionOne div p:nth-of-type(2) {
+  color: #f9fcf9d9;
+  margin: 30px 0px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.button-36 {
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  height: 3.5rem;
+  padding: 0 1.3rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-36:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .button-36 {
+      padding: 0 2.6rem;
+  }
+}
+
+/*! section two */
+
+.sectionTwo {
+  height: 600px;
+  display: flex;
+  background-image: linear-gradient(rgb(236 187 187), rgb(213 207 207 / 61%)), url(./assets/flower_background2.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-sec {
+  width: 400px;
+  position: relative;
+  margin-top: 120px;
+  margin-left: 150px;
+}
+
+.part-one {
+  width: 280px;
+  height: 340px;
+  border: 4px dashed rgb(178 101 169);
+  border-radius: 10px;
+}
+
+.part-two {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+}
+
+.part-two img {
+  width: 280px;
+  height: 340px;
+  border-radius: 8px;
+}
+
+.about-sec {
+  width: 800px;
+  margin-left: 100px;
+  margin-right: 50px;
+  padding-right: 60px;
+  padding-left: 20px;
+  padding-top: 0px;
+  margin-top: 100px;
+}
+
+.about-sec p {
+  margin: 8px;
+  margin-left: 0px;
+  text-align: justify;
+  font-size: 16px;
+  color: #000000b7;
+  font-weight: 400;
+}
+
+.about-sec p:nth-of-type(1) {
+  margin: 20px 20px 20px 0px;
+  border-left: 4px solid #80008085;
+  padding-left: 5px;
+  color: #800080ae;
+  font-size: 18px;
+}
+
+.about-sec h2 {
+  margin: 20px;
+  margin-left: 0px;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #585958;
+}
+
+.about-sec .btn {
+  padding: 15px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(245, 130, 153);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  outline: none;
+  font-weight: 500;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  cursor: pointer;
+}
+
+/*! section three */
+
+.sectionThree {
+  background-image: linear-gradient(to right, rgb(23, 0, 29) 20%, rgb(18 0 29 / 81%) 100%), url(./assets/floral-ornaments.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  padding-top: 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sectionThree>h2 {
+  color: white;
+  font-size: 40px;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sectionThree>p {
+  color: rgb(177, 177, 227);
+  width: 550px;
+  margin: auto;
+  margin: 10px auto;
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sectionThree .flower-details {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.sectionThree .flower-details .sectionThree-card {
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.flower-details img {
+  width: 265px;
+  height: 220px;
+  border-radius: 10px;
+}
+
+.sectionThree-card div {
+  padding: 10px;
+}
+
+.sectionThree-card div h3 {
+  color: rgb(27, 25, 25);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.sectionThree-card div p {
+  color: gray;
+  margin: 5px 0px;
+}
+
+.sectionThree-card div button {
+  width: 100%;
+  padding: 8px 0px;
+  margin: 10px 0px;
+  font-size: 18px;
+  border: 1px solid plum;
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+}
+
+.sectionThree-card div button:hover {
+  background-color: rgb(255, 187, 201);
+}
+
+/*! Section four */
+
+.sectionFour {
+  background-image: linear-gradient(rgb(236 187 187), rgb(213 207 207 / 61%)), url(./assets/flower_section4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.deal-heading {
+  margin: 20px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  color: rgb(189 30 76 / 76%);
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.deal-details {
+  margin: 10px auto;
+  width: 700px;
+  font-size: 18px;
+  color: rgb(85, 80, 80);
+}
+
+.deal-deadline {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0px;
+}
+
+.deal-deadline div {
+  width: 70px;
+  height: 70px;
+  margin: 0px 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  border-radius: 5px;
+}
+
+.deal-deadline div p:nth-of-type(1) {
+  font-family: sans-serif;
+  font-weight: 600;
+  margin: 0px;
+  padding-top: 5px;
+}
+
+.deal-deadline div p:nth-of-type(2) {
+  color: rgb(124, 119, 119);
+  font-size: 15px;
+  padding-bottom: 5px;
+  margin: 0px;
+}
+
+.flower-offer {
+  display: flex;
+  justify-content: center;
+}
+
+.flower-offer .sectionFour-card {
+  display: flex;
+  margin: 0px 10px;
+  background-color: rgb(245, 245, 245);
+  text-align: start;
+  padding: 20px 15px;
+  border-radius: 15px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.flower-offer .sectionFour-card img {
+  width: 170px;
+  height: 180px;
+}
+
+.flower-offer .sectionFour-card div:nth-of-type(1) {
+  width: 200px;
+  padding: 10px 0px;
+}
+
+.flower-offer .sectionFour-card div:nth-of-type(1) h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 10px 0px;
+}
+
+.flower-offer .sectionFour-card div:nth-of-type(1) button {
+  padding: 10px 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid rgb(245, 130, 153);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  outline: none;
+  cursor: pointer;
+}
+
+.flower-offer .sectionFour-card div:nth-of-type(1) button:hover {
+  background-color: rgb(245, 130, 153);
+}
+
+.flower-offer .sectionFour-card div:nth-of-type(1) p {
+  margin: 10px 0px;
+  color: gray;
+  font-size: 15px;
+}
+
+.flower-offer .sectionFour-card div:nth-of-type(1) .price {
+  color: rgb(255, 0, 74);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.flower-offer .sectionFour-card div:nth-of-type(1) .price span {
+  color: rgba(128, 128, 128, 0.637);
+  text-decoration: line-through;
+  font-size: 15px;
+}
+
+/*! section Five */
+
+.sectionFive {
+  height: 600px;
+  background-image: linear-gradient(314deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
+}
+
+.slider {
+  height: 600px;
+  display: flex;
+  position: relative;
+}
+
+.carousel-control-prev {
+  width: 10% !important;
+}
+
+.carousel-control-next {
+  width: 10% !important;
+}
+
+.slider .clients {
+  width: 500px;
+  height: 200px;
+  margin: 100px 80px 100px 160px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.slider .clients p:nth-of-type(1) {
+  font-size: 20px;
+  color: rgb(223, 216, 216);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slider .clients p:nth-of-type(2) {
+  color: rgb(186, 181, 181);
+  text-align: justify;
+}
+
+.slider .clients h2 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.clients-info {
+  position: relative;
+}
+
+.clients-info .client-img-1 {
+  position: absolute;
+  top: 80px;
+  left: 220px;
+  height: 290px;
+  width: 290px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: rgb(12 50 88);
+}
+
+.clients-info .client-img-2 {
+  position: absolute;
+  top: 80px;
+  left: 220px;
+  height: 290px;
+  width: 290px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  background-color: rgb(79, 75, 4);
+}
+
+.clients-info .client-img-3 {
+  position: absolute;
+  top: 80px;
+  left: 220px;
+  height: 290px;
+  width: 290px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  background-color: rgb(58, 12, 74);
+}
+
+.clients-info .client-img-1 img {
+  width: 230px;
+  height: 290px;
+}
+
+.clients-info .client-img-2 img {
+  width: 450px;
+  height: 300px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.clients-info .client-img-3 img {
+  width: 450px;
+  height: 350px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.clients-info .client-detail {
+  width: 380px;
+  height: 240px;
+  position: absolute;
+  top: 250px;
+  padding: 30px 20px 0px 10px;
+  background-color: rgba(79, 75, 4, 0.707);
+  border-radius: 0% 52% 0% 28% / 0% 68% 10% 0%;
+}
+
+.clients-info .client-detail-1 {
+  background-color: rgba(12, 50, 88, 0.649);
+}
+
+.clients-info .client-detail-3 {
+  background-color: rgba(58, 12, 74, 0.556);
+}
+
+.clients-info .client-detail h2 {
+  margin: 10px 20px;
+  color: rgb(255, 255, 255);
+}
+
+.clients-info .client-detail p {
+  margin: 10px 0px 10px 20px;
+  color: rgba(255, 255, 255, 0.655);
+}
+
+.slider .slide-show {
+  position: absolute;
+  top: 480px;
+  left: 600px;
+}
+
+.slider .slide {
+  border: 1px solid white;
+  margin: 10px;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+/*! section six */
+
+.sectionSix {
+  height: 100vh;
+  text-align: center;
+  background-image: linear-gradient(rgb(236 187 187), rgb(213 207 207 / 61%)), url(./assets/flower_background2.avif);
+  background-size: cover;
+  background-position: center;
+  padding-top: 40px;
+}
+
+.sectionSix h2 {
+  margin: 20px;
+  margin-bottom: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: rgb(78, 73, 73);
+}
+
+.sectionSix>p {
+  width: 700px;
+  margin: 10px auto;
+  font-size: 16px;
+  color: rgb(84, 82, 82);
+  font-weight: lighter;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  margin-top: 30px;
+}
+
+.sectionSix .card {
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  width: 24rem;
+}
+
+.card img {
+  width: 390px;
+  height: 260px;
+}
+
+.card-body {
+  margin: 10px;
+}
+
+.card-body p {
+  margin-bottom: 10px;
+  color: rgb(103, 101, 101);
+  font-size: 15px;
+}
+
+.card-body p span {
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 2px solid rgb(103, 101, 101);
+}
+
+.card-body h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card-body a {
+  color: rgb(192, 56, 83);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/*! section seven */
+
+.sectionSeven {
+  height: 550px;
+  background-image: linear-gradient(314deg, rgba(7, 7, 9, 1) 6.5%, rgba(27, 24, 113, 1) 93.2%);
+  color: white;
+}
+
+.sectionSeven #top {
+  display: flex;
+}
+
+.sectionSeven #top .address {
+  width: 350px;
+  position: relative;
+  min-height: 250px;
+  margin: 100px 0px 100px 120px;
+}
+
+.sectionSeven #top .address img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 22px;
+}
+
+.sectionSeven #top .address h2 {
+  padding: 30px 70px;
+  font-family: 'Roboto Slab';
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+
+.sectionSeven #top .address p {
+  width: 300px;
+  color: rgb(149, 143, 143);
+}
+
+.sectionSeven #top .address i {
+  font-size: 30px;
+  margin: 20px 5px;
+}
+
+.sectionSeven #top .company {
+  width: 150px;
+  min-height: 200px;
+  margin: 130px 0px 100px 50px;
+}
+
+.sectionSeven #top .company h2 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.sectionSeven #top .company ul {
+  padding: 0px;
+  list-style: none;
+}
+
+.sectionSeven #top .company ul li {
+  margin-top: 10px;
+  color: rgb(149, 143, 143);
+}
+
+.sectionSeven #top .contact {
+  width: 180px;
+  min-height: 200px;
+  margin: 130px 0px 100px 50px;
+}
+
+.sectionSeven #top .contact h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.sectionSeven #top .contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sectionSeven #top .contact ul li {
+  margin-top: 10px;
+  color: rgb(149, 143, 143);
+}
+
+.sectionSeven #top .update {
+  min-height: 200px;
+  margin: 130px 0px 100px 50px;
+}
+
+.sectionSeven #top .update h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.sectionSeven #top .update div input {
+  padding: 15px 15px;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  font-size: 18px;
+  width: 250px;
+  margin: 0px;
+}
+
+.sectionSeven #top .update button {
+  padding: 15px;
+  width: 120px;
+  margin-left: -4px;
+  font-size: 18px;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  font-weight: 500;
+  background-color: #F6BFCA;
+  outline: none;
+  cursor: pointer;
+}
+
+.sectionSeven #bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 120px;
+  color: rgb(149, 143, 143);
+  font-weight: 400;
+}
+
+.sectionSeven #bottom span {
+  margin-left: 10px;
+}
+
+/*! Login page */
+
+.login-page {
+  display: flex;
+  height: 100vh;
+}
+
+.login-page .section-1 {
+  width: 45%;
+  position: relative;
+  background: rgba(235, 233, 238, 0.982);
+  /* color: white; */
+}
+
+.login-page .section-1 nav {
+  border-bottom: 1px solid rgba(60, 42, 174, 0.557);
+  padding: 10px 0px;
+  padding-left: 50px;
+}
+
+.login-page .section-1 nav span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.section-1 img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.login-page .section-1 h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 10px;
+  color: rgb(163, 21, 44);
+  cursor: pointer;
+}
+
+.sign-in-section {
+  position: absolute;
+  top: 130px;
+  left: 100px;
+  overflow: hidden;
+  width: 450px;
+}
+
+.sign-in-section h3 {
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.sign-in-section p {
+  color: rgb(87, 85, 85);
+}
+
+.sign-in-section .google-btn {
+  padding: 12px;
+  width: 250px;
+  border: none;
+  border-radius: 10px;
+  border: 2px solid rgb(211, 208, 208);
+  outline: none;
+  background-color: white;
+  font-weight: 500;
+  margin-left: 100px;
+  margin-top: 20px;
+  font-size: 18px;
+  position: relative;
+}
+
+.google-btn img {
+  position: absolute;
+  left: 55px;
+  top: 12px;
+  width: 25px;
+  height: 25px;
+}
+
+.google-btn:hover {
+  background-color: rgb(106, 49, 222);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid rgb(106, 49, 222);
+}
+
+.sign-in-section .or-option {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 190px;
+}
+
+.sign-in-section .or-option::before {
+  content: "";
+  position: absolute;
+  left: -190px;
+  top: 12px;
+  width: 180px;
+  height: 2px;
+  background-color: rgba(123, 120, 120, 0.599);
+}
+
+.sign-in-section .or-option::after {
+  content: "";
+  position: absolute;
+  left: 65px;
+  top: 12px;
+  width: 190px;
+  height: 2px;
+  background-color: rgba(123, 120, 120, 0.599);
+}
+
+.email-div label,
+.password-div label {
+  display: block;
+  margin: 5px 0px;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#email,
+#password {
+  padding: 15px;
+  padding-left: 15px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.529);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.email-div {
+  margin-bottom: 20px;
+}
+
+.rememberMe-forgotPassword-section {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-me-div {
+  display: flex;
+}
+
+.checkbox-wrapper-23 *,
+.checkbox-wrapper-23 *:after,
+.checkbox-wrapper-23 *:before {
+  box-sizing: border-box;
+}
+
+.checkbox-wrapper-23 input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox-wrapper-23 input:checked+label svg path {
+  stroke-dashoffset: 0;
+}
+
+.checkbox-wrapper-23 input:focus+label {
+  transform: scale(1.03);
+}
+
+.checkbox-wrapper-23 input+label {
+  display: block;
+  border: 2px solid #333;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all .2s ease;
+  margin-right: 5px;
+}
+
+.checkbox-wrapper-23 input+label:active {
+  transform: scale(1.05);
+  border-radius: 12px;
+}
+
+.checkbox-wrapper-23 input+label svg {
+  pointer-events: none;
+  padding: 5%;
+  margin-bottom: 8px;
+}
+
+.checkbox-wrapper-23 input+label svg path {
+  fill: none;
+  stroke: #120618;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 101;
+  transition: all 250ms cubic-bezier(1, 0, .37, .91);
+}
+
+.remember-me-div label {
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.Forgot-password-div a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.sign-in-section .login-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: rgb(106, 49, 222);
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  border: none;
+  margin-top: 20px;
+}
+
+.sign-up-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.sign-up-div a {
+  margin-left: 5px;
+  color: #5643CC;
+  font-weight: 600;
+}
+
+.login-page .section-2 {
+  width: 55%;
+  background-image: linear-gradient(rgba(19, 19, 150, 0.181), rgba(27, 24, 113, 0.222));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.login-page .section-2 img {
+  width: 100%;
+  height: 95vh;
+  margin-top: 20px;
 }
