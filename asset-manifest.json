@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/floral-haven/static/css/main.01d81428.css",
+    "main.js": "/floral-haven/static/js/main.aef59021.js",
+    "static/js/787.571f6a6b.chunk.js": "/floral-haven/static/js/787.571f6a6b.chunk.js",
+    "static/media/loginPage-background-2.png": "/floral-haven/static/media/loginPage-background-2.343002ebfbef280bc330.png",
+    "static/media/floral-ornaments.jpg": "/floral-haven/static/media/floral-ornaments.6718500819d904d8cb9d.jpg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/floral-haven/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/sectionOneFlower.png": "/floral-haven/static/media/sectionOneFlower.04b9a3863f323d6e3f93.png",
+    "static/media/kiara-advani.png": "/floral-haven/static/media/kiara-advani.0b12781c2405eb5fed90.png",
+    "static/media/anand-mahindra.png": "/floral-haven/static/media/anand-mahindra.549abcc149bee54cc01d.png",
+    "static/media/Screenshot 2023-09-20 at 2.51.30 AM.png": "/floral-haven/static/media/Screenshot 2023-09-20 at 2.51.30 AM.921721dd505d795e457e.png",
+    "static/media/fontawesome-webfont.eot": "/floral-haven/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/floral-haven/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/akshay-kumar.png": "/floral-haven/static/media/akshay-kumar.01e8586631e6669406c7.png",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/floral-haven/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/flower-articles1.jpg": "/floral-haven/static/media/flower-articles1.0e4f2098788d4f429950.jpg",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/floral-haven/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/Screenshot 2023-09-20 at 4.22.14 AM.png": "/floral-haven/static/media/Screenshot 2023-09-20 at 4.22.14 AM.e2c5b2f621aac0e82e99.png",
+    "static/media/flower-articles2.webp": "/floral-haven/static/media/flower-articles2.7dbefec39463785edea8.webp",
+    "static/media/Screenshot 2023-09-20 at 4.22.03 AM.png": "/floral-haven/static/media/Screenshot 2023-09-20 at 4.22.03 AM.ecd278ed3fb560700df1.png",
+    "static/media/flower_section4.jpg": "/floral-haven/static/media/flower_section4.f74ae12a2bc1e68fab3e.jpg",
+    "static/media/Screenshot 2023-09-20 at 4.21.31 AM.png": "/floral-haven/static/media/Screenshot 2023-09-20 at 4.21.31 AM.baf6daef21e89ea679c9.png",
+    "static/media/Screenshot 2023-09-20 at 4.21.45 AM.png": "/floral-haven/static/media/Screenshot 2023-09-20 at 4.21.45 AM.f9595674546bf9c20f34.png",
+    "static/media/flower-icon.png": "/floral-haven/static/media/flower-icon.1e74602628d161c9a56c.png",
+    "static/media/google.png": "/floral-haven/static/media/google.cadee8cdb0c0afb1a713.png",
+    "static/media/flower-article3.avif": "/floral-haven/static/media/flower-article3.bcdfc8163f61b5c67947.avif",
+    "static/media/flower_background2.avif": "/floral-haven/static/media/flower_background2.f0d91555af73f393bf6f.avif",
+    "index.html": "/floral-haven/index.html",
+    "main.01d81428.css.map": "/floral-haven/static/css/main.01d81428.css.map",
+    "main.aef59021.js.map": "/floral-haven/static/js/main.aef59021.js.map",
+    "787.571f6a6b.chunk.js.map": "/floral-haven/static/js/787.571f6a6b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01d81428.css",
+    "static/js/main.aef59021.js"
+  ]
+}
