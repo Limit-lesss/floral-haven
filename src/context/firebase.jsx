@@ -28,12 +28,9 @@ export const FirebaseProvider = (props) => {
     const navigate = useNavigate();
     const signUPWithGoogle = () => {
         signInWithPopup(FirebaseAuth, GoogleProvider).then(() => {
-            navigate('/');
+            navigate('/floral-haven');
             setIsLogin(true);
         })
-    }
-    const createUser = () =>{
-        
     }
     return(
         <FirebaseContext.Provider value={{signUPWithGoogle, isLogin, FirebaseAuth}}>
